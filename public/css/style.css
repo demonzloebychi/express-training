@@ -1,0 +1,51 @@
+.button {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    flex: 1 1 0;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 300px;
+    max-width: 400px;
+    a {
+      margin-top: auto;
+    }
+  }
+}

@@ -2,6 +2,7 @@
   "name": "express-next-shop",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,9 +10,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@adminjs/express": "^6.1.1",
+    "@adminjs/mongoose": "^4.1.0",
+    "adminjs": "^7.8.17",
+    "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
-    "serverless-http": "^3.2.0"
+    "express-react-views": "^0.11.0",
+    "mongoose": "^8.16.4",
+    "serverless-http": "^3.2.0",
+    "slugify": "^1.6.6"
   }
 }
