@@ -1,7 +1,7 @@
 const React = require("react");
 const Header = require("./components/Header");
 
-function About({ users }) {
+function About({  }) {
   return (
     <>
       <html lang="en">
@@ -16,14 +16,10 @@ function About({ users }) {
           <title>Document</title>
         </head>
         <body>
+          <Header />
           <div className="container">
-            <Header />
             <h1>О нас - страница</h1>
-            <ul>
-              {users.map((user) => (
-                <li key={user}>{user}</li>
-              ))}
-            </ul>
+    
           </div>
         </body>
       </html>

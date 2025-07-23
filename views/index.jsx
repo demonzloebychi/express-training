@@ -17,8 +17,8 @@ function Index({ users }) {
           <title>Document</title>
         </head>
         <body>
+          <Header></Header>
           <div className="container">
-            <Header></Header>
             <h1>Главная страница</h1>
             <Form></Form>
 

@@ -12,6 +12,12 @@ function Header({ users }) {
         <li>
           <a href="/blog">Блог</a>
         </li>
+        <li>
+          <a href="/doctors">Врачи</a>
+        </li>
+        <li>
+          <a href="/services">Услуги</a>
+        </li>
       </ul>
     </header>
   );

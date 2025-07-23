@@ -13,8 +13,8 @@ function Post({ post }) {
         <title>{post.seoTitle}</title>
       </head>
       <body>
+        <Header></Header>
         <div className="container">
-          <Header></Header>
           <h1>{post.title}</h1>
           <p>
             <em>Автор: {post.author || "Неизвестен"}</em>
