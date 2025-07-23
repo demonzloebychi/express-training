@@ -26,7 +26,7 @@ router.get('/profile', authMiddleware, async (req, res) => {
 
 // About и другие публичные
 router.get('/about', (req, res) => {
-  res.render('about', {  });
+  res.render('About', {  });
 });
 
 export default router;

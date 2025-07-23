@@ -1,15 +1,3 @@
-ul {
-  list-style: none; /* Убирает маркеры списка */
-  padding: 0;       /* Убирает внутренний отступ слева */
-  margin: 0;        /* Убирает внешний отступ */
-}
-
-li {
-  margin: 0;        /* Убирает внешний отступ */
-  padding: 0;       /* Убирает внутренний отступ слева */
-}
-
-
 .button {
   background: black;
   color: white;
@@ -30,7 +18,7 @@ li {
   ul {
     display: flex;
     gap: 20px;
-    padding: 0;
+    padding: 20px 0;
     font-size: 20px;
     font-family: sans-serif;
     li {

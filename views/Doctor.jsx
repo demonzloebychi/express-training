@@ -5,6 +5,8 @@ export default function Doctor({ doctors }) {
   return (
     <html lang="ru">
       <head>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Врачи</title>

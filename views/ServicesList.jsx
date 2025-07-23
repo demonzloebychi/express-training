@@ -14,11 +14,11 @@ export default function ServicesList({ services }) {
         <Header></Header>
         <div className="container">
           <h1 className="text-3xl">Услуги</h1>
-          <ul>
+          <ul className="py-3">
             {services.map((s) => (
-              <li key={s._id}>
+              <li key={s._id} className="bg-sky-300 rounded-xl px-[20px] py-[10px] size-fit">
                 <a href={`/services/${s.slug}`}>
-                  <h2>{s.name}</h2>
+                  <div className="text-xl">{s.name}</div>
                   {s.image && <img src={s.image} alt={s.name} width="100" />}
                 </a>
               </li>

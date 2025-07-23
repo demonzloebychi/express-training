@@ -33,13 +33,13 @@ export default function Service({ service, subservices }) {
           {/* Секция вывода подуслуг */}
           {subservices && subservices.length > 0 && (
             <section style={{ marginTop: "40px" }}>
-              <h2>Подуслуги</h2>
-              <ul>
+              <h2 className="text-2xl">Наши услуги</h2>
+              <ul className="py-3">
                 {subservices.map((sub) => (
-                  <li key={sub._id}>
+                  <li key={sub._id} className="bg-sky-300 rounded-xl px-[20px] py-[10px] size-fit">
                     {/* Сформируем ссылку по слагу */}
                     {/* Для вложенных услуг может потребоваться путь с родителями (см. ниже) */}
-                    <a href={`/services/${getFullSlug(sub)}`}>{sub.name}</a>
+                    <a href={`/services/${sub.fullSlug}`}>{sub.name}</a>
                   </li>
                 ))}
               </ul>
