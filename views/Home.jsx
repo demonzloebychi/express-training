@@ -19,15 +19,15 @@ export default function Home({ user }) {
           <h1 className="text-3xl">Главная страница</h1>
           <Form />
 
-          <h2 >Привет, {user?.username || 'гость'}!</h2>
+          <h2 className="text-2xl pt-[30px]">Привет, {user?.username || 'гость'}!</h2>
           {user ? (
             <>
               <p>Email: {user.email}</p>
-              <a href="/logout">Выйти</a>
+              <a href="/logout" className="text-blue-700">Выйти</a>
             </>
           ) : (
             <>
-              <p><a href="/login">Войти</a> или <a href="/signup">Зарегистрироваться</a></p>
+              <p><a href="/login" className="text-blue-700">Войти</a> или <a href="/signup" className="text-blue-700">Зарегистрироваться</a></p>
             </>
           )}
         </div>

@@ -25,7 +25,7 @@ function Posts({ posts }) {
                 <p>{post.author}</p>
                 <br />
                 <small>{new Date(post.createdAt).toLocaleString()}</small>
-                <a className="button" href={`blog/${post.slug}`}>
+                <a className="button mt-[10px]" href={`blog/${post.slug}`}>
                   Перейти
                 </a>
               </li>

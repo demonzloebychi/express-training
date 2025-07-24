@@ -14,7 +14,7 @@ export default function ServicesList({ services }) {
         <Header></Header>
         <div className="container">
           <h1 className="text-3xl">Услуги</h1>
-          <ul className="py-3">
+          <ul className="py-3 flex gap-[20px] flex-wrap">
             {services.map((s) => (
               <li key={s._id} className="bg-sky-300 rounded-xl px-[20px] py-[10px] size-fit">
                 <a href={`/services/${s.slug}`}>

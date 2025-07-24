@@ -20,7 +20,7 @@ function About({}) {
         <body>
           <Header />
           <div className="container">
-            <h1>О нас - страница</h1>
+            <h1 className="text-3xl">О нас - страница</h1>
           </div>
         </body>
       </html>

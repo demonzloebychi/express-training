@@ -1,7 +1,7 @@
 const React = require("react");
 function Header({ users }) {
   return (
-    <header className="container header ">
+    <header className="container header">
       <ul className="py-3">
         <li>
           <a href="/">Главная</a>

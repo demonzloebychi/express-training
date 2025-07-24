@@ -34,7 +34,7 @@ export default function Service({ service, subservices }) {
           {subservices && subservices.length > 0 && (
             <section style={{ marginTop: "40px" }}>
               <h2 className="text-2xl">Наши услуги</h2>
-              <ul className="py-3">
+              <ul className="py-3 flex gap-[20px] flex-wrap">
                 {subservices.map((sub) => (
                   <li key={sub._id} className="bg-sky-300 rounded-xl px-[20px] py-[10px] size-fit">
                     {/* Сформируем ссылку по слагу */}
