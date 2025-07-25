@@ -1,7 +1,7 @@
 import React from "react";
 const Header = require("./components/Header");
 
-export default function Doctor({ doctors }) {
+export default function Doctor({ doctors, menu }) {
   return (
     <html lang="ru">
       <head>
@@ -13,7 +13,7 @@ export default function Doctor({ doctors }) {
         <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body>
-        <Header></Header>
+        <Header items={menu} />
         <div className="container">
           <h1>Список врачей</h1>
           <ul>

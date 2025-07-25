@@ -11,11 +11,14 @@ import pagesRoutes from './routes/pages.js';
 import feedbackTelegramRoutes from './routes/feedbackTelegram.js';
 import doctorRoutes from './routes/doctor.js';
 import serviceRoutes from './routes/service.js';
+import menuRoutes from './routes/menu.js';
+import menuMiddleware from './middleware/menuMiddleware.js'; // путь подкорректируйте
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+app.use(menuMiddleware);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
@@ -35,5 +38,6 @@ app.use('/users', usersRoutes);        // API пользователей по /u
 app.use('/', feedbackTelegramRoutes);          // /feedback - заявка в телеграм
 app.use('/doctors', doctorRoutes);
 app.use('/services', serviceRoutes);
+app.use('/menu', menuRoutes);
 
 export default app;

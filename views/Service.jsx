@@ -1,7 +1,7 @@
 import React from "react";
 const Header = require("./components/Header");
 
-export default function Service({ service, subservices }) {
+export default function Service({ service, subservices, menu }) {
   return (
     <html lang="ru">
       <head>
@@ -16,7 +16,7 @@ export default function Service({ service, subservices }) {
         {/* Можно добавить дополнительные метатеги, если нужно */}
       </head>
       <body>
-        <Header></Header>
+        <Header items={menu} />
         <div className="container">
           <h1 className="text-3xl">{service.name}</h1>
 

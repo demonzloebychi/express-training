@@ -1,7 +1,7 @@
 const React = require("react");
 const Header = require("./components/Header");
 
-function About({}) {
+function About({menu}) {
   return (
     <>
       <html lang="en">
@@ -18,7 +18,7 @@ function About({}) {
           <title>Document</title>
         </head>
         <body>
-          <Header />
+          <Header items={menu} />
           <div className="container">
             <h1 className="text-3xl">О нас - страница</h1>
           </div>

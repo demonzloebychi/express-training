@@ -15,18 +15,21 @@ router.get('/', async (req, res) => {
       user = await User.findById(decoded.id).lean();
     } catch { }
   }
-  res.render('Home', { user });
+  res.render('Home', { user, menu: res.locals.menu, });
 });
 
 // Профиль, защищённый
 router.get('/profile', authMiddleware, async (req, res) => {
   const user = await User.findById(req.userId).lean();
-  res.render('Profile', { user });
+  res.render('Profile', { 
+    user, // если есть user
+    menu: res.locals.menu, // передаем меню из middleware
+   });
 });
 
 // About и другие публичные
 router.get('/about', (req, res) => {
-  res.render('About', {  });
+  res.render('About', { menu: res.locals.menu, });
 });
 
 export default router;

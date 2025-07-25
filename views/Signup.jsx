@@ -1,7 +1,7 @@
 import React from "react";
 const Header = require("./components/Header");
 
-export default function Signup({ error }) {
+export default function Signup({ error, menu }) {
   return (
     <html>
       <head>
@@ -11,7 +11,7 @@ export default function Signup({ error }) {
         <title>Регистрация</title>
       </head>
       <body>
-        <Header></Header>
+        <Header items={menu} />
         <div className="flex flex-col justify-center items-center pt-[40px]">
           <h1 className="text-3xl py-3">Регистрация</h1>
           {error && <p style={{ color: "red" }}>{error}</p>}

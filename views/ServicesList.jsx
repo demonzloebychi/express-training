@@ -1,17 +1,19 @@
 import React from "react";
 const Header = require("./components/Header");
 
-export default function ServicesList({ services }) {
+export default function ServicesList({ services, menu }) {
   return (
     <html>
       <head>
+                <link rel="stylesheet" href="./css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="./css/style.css" />
 
         <title>Услуги</title>
       </head>
       <body>
-        <Header></Header>
+        <Header items={menu} />
         <div className="container">
           <h1 className="text-3xl">Услуги</h1>
           <ul className="py-3 flex gap-[20px] flex-wrap">

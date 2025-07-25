@@ -2,7 +2,7 @@ import React from "react";
 const Header = require("./components/Header");
 const Form = require("./components/Form");
 
-export default function Home({ user }) {
+export default function Home({ user, menu }) {
   return (
     <html lang="en">
       <head>
@@ -14,7 +14,7 @@ export default function Home({ user }) {
         <title>Главная</title>
       </head>
       <body>
-        <Header />
+        <Header items={menu} />
         <div className="container">
           <h1 className="text-3xl">Главная страница</h1>
           <Form />
@@ -31,6 +31,7 @@ export default function Home({ user }) {
             </>
           )}
         </div>
+
       </body>
     </html>
   );

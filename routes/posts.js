@@ -6,7 +6,7 @@ const router = express.Router();
 // Страница блога — рендеринг
 router.get('/', async (req, res) => {
   const posts = await Post.find().sort({ createdAt: -1 }).lean();
-  res.render('Posts', { posts });
+  res.render('Posts', { posts, menu: res.locals.menu, });
 });
 
 // Конкретная статья

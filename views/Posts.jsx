@@ -2,7 +2,7 @@
 const Header = require("./components/Header");
 const React = require("react");
 
-function Posts({ posts }) {
+function Posts({ posts, menu }) {
   return (
     <html lang="en">
       <head>
@@ -15,7 +15,7 @@ function Posts({ posts }) {
         <title>Блог</title>
       </head>
       <body>
-        <Header></Header>
+        <Header items={menu} />
         <div className="container">
           <h1 className="text-3xl py-[30px]">Блог</h1>
           <ul className="blog-list">

@@ -2,7 +2,7 @@
 const React = require("react");
 const Header = require("./components/Header");
 
-function Post({ post }) {
+function Post({ post, menu }) {
   return (
     <html lang="en">
       <head>
@@ -15,7 +15,7 @@ function Post({ post }) {
         <title>{post.seoTitle}</title>
       </head>
       <body>
-        <Header></Header>
+        <Header items={menu} />
         <div className="container">
           <h1>{post.title}</h1>
           <p>
